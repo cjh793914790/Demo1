@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.jahaocao.demo1"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation deps.support.app_compat
+    implementation deps.support.constraintlayout
+    implementation deps.support.multidex
+    implementation deps.support.annotations
+    implementation deps.support.recyclerview
+    implementation deps.rxjava2.rxjava
+    implementation deps.rxjava2.rxAndroid
+    implementation deps.retrofit.retrofit
+    implementation deps.retrofit.retrofit_converter_gson
+    implementation deps.retrofit.retrofit_adapter_rxjava2
+    implementation deps.retrofit.retrofit_rxlifecycle_components
+    implementation deps.okhttp3.okhttp3
+    implementation deps.okhttp3.logging_interceptor
+    implementation deps.greendao.greendao
+    implementation deps.glide.glide
+    implementation deps.eventbus.eventbus
+    implementation deps.jsoup.jsoup
+
+
+
+    annotationProcessor deps.glide.compiler
+
+//    implementation 'com.hjm:BottomTabBar:1.1.1'
+//    implementation 'com.android.support:support-v4:27.1.1'
+//    implementation 'com.android.support:design:27.+'
+//    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+//    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+//    implementation 'org.greenrobot:eventbus:3.0.0'
+//    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+
+//    implementation 'com.hjm:BottomTabBar:1.1.1'
+//    implementation 'com.android.implementationsupport:support-v4:27.1.1'
+//    implementation 'com.android.support:design:27.+'
+//    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+//    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+//    implementation 'org.greenrobot:eventbus:3.0.0'
+//    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    annotationProcessor deps.glide.compiler
+    implementation deps.BottomTabBar.BottomTabBar
+    implementation deps.design.design
+    implementation deps.support.support
+    implementation deps.BaseRecyclerViewAdapterHelper.BaseRecyclerViewAdapterHelper
+    implementation deps.layout.layout
+    implementation deps.SmartRefreshLayout.SmartRefreshLayout
+    implementation deps.BaseRecyclerViewAdapterHelper.BaseRecyclerViewAdapterHelper
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation files('libs/SecurityEnvSDK-release-1.1.0.jar')
+    implementation files('libs/umeng-analytics-7.5.3.jar')
+    implementation files('libs/umeng-common-1.5.3.jar')
+    implementation files('libs/umeng-share-core-6.9.2.jar')
+    implementation files('libs/umeng-share-QQ-simplify-6.9.2.jar')
+    implementation files('libs/umeng-share-sina-simplify-6.9.2.jar')
+    implementation files('libs/umeng-share-wechat-simplify-6.9.2.jar')
+    implementation files('libs/umeng-shareboard-widget-6.9.2.jar')
+    implementation files('libs/umeng-sharetool-6.9.2.jar')
+    implementation files('libs/utdid4all-1.1.5.3_proguard.jar')
+}

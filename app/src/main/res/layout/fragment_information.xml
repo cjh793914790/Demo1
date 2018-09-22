@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mToolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorZgs">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="第一通航"
+            android:textColor="@color/colorHs"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/mSou"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sou" />
+    </android.support.v7.widget.Toolbar>
+<LinearLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/colorBs"
+    android:orientation="horizontal">
+    <android.support.design.widget.TabLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:id="@+id/mTableLayout"></android.support.design.widget.TabLayout>
+   <ImageView
+       android:layout_weight="1"
+       android:layout_width="0dp"
+       android:src="@drawable/add"
+       android:layout_height="20dp"
+       android:id="@+id/Add"/>
+</LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mViewPager"></android.support.v4.view.ViewPager>
+</LinearLayout>

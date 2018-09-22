@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <EditText
+        android:id="@+id/ppp_neirong"
+        android:layout_width="0dp"
+        android:layout_height="172dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="评论内容最多150字"
+        android:textColor="#000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ppp_quxiao" />
+
+    <TextView
+        android:id="@+id/ppp_quxiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="取消"
+        android:textColor="#222222"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/ppp_qupinglun"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ppp_qupinglun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="写评论"
+        android:textColor="#222222"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ppp_quxiao"
+        app:layout_constraintEnd_toStartOf="@+id/ppp_fabu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ppp_quxiao"
+        app:layout_constraintTop_toTopOf="@+id/ppp_quxiao"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/ppp_fabu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="发布"
+        android:textColor="@color/colorLs"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ppp_qupinglun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ppp_qupinglun"
+        app:layout_constraintTop_toTopOf="@+id/ppp_qupinglun"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@color/colorHs"
+
+        app:layout_constraintBottom_toBottomOf="@+id/ppp_neirong"
+        app:layout_constraintEnd_toEndOf="@+id/ppp_neirong"
+        app:layout_constraintStart_toStartOf="@+id/ppp_neirong" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0.5dp"
+        android:layout_height="0dp"
+        android:background="@color/colorHs"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/ppp_neirong"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@color/colorHs"
+        app:layout_constraintEnd_toEndOf="@+id/ppp_neirong"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="@+id/ppp_neirong" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="0.5dp"
+        android:layout_height="0dp"
+        android:background="@color/colorHs"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="@+id/ppp_neirong"
+        app:layout_constraintTop_toTopOf="@+id/ppp_neirong" />
+
+
+</android.support.constraint.ConstraintLayout>
